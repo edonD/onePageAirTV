@@ -59,36 +59,33 @@ export default function TemplateofAllDevices({ trigger }) {
               name='Google Chromecast'
             ></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/AndroidTV.png'
+              logosrc='logodevice/AndroidTV.jpg'
               name='Android TV'
             ></LogoDevice>
+
             <LogoDevice
-              logosrc='logodevice/AppleTV.png'
-              name='Apple TV'
-            ></LogoDevice>
-            <LogoDevice
-              logosrc='logodevice/FireStickTV.png'
+              logosrc='logodevice/FireStickTV.jpg'
               name='Amazon Fire TV stick'
             ></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/NvidiaShieldTV.png'
+              logosrc='logodevice/NvidiaShieldTV.jpg'
               name='Nvidia Shield'
             ></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/panasonicTV.png'
+              logosrc='logodevice/panasonicTV.jpg'
               name='Panasonic Shield'
             ></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/xBoxOneTV.png'
+              logosrc='logodevice/xBoxOneTV.jpg'
               name='xBoxOne '
             ></LogoDevice>
             <LogoDevice
               logosrc='logodevice/AmazonFireTV1.jpg'
               name='Amazon TV'
             ></LogoDevice>
-            <LogoDevice logosrc='logodevice/LGTV.png' name='LG TV'></LogoDevice>
+
             <LogoDevice
-              logosrc='logodevice/samsungTV.png'
+              logosrc='logodevice/samsungTV.jpg'
               name='Samsung TV'
             ></LogoDevice>
           </Devices>
