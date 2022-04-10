@@ -83,7 +83,7 @@ export default function TemplateofAllDevices({ trigger }) {
               name='xBoxOne '
             ></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/AmazonFireTV.png'
+              logosrc='logodevice/AmazonFireTV1.jpg'
               name='Amazon TV'
             ></LogoDevice>
             <LogoDevice logosrc='logodevice/LGTV.png' name='LG TV'></LogoDevice>

@@ -92,9 +92,6 @@ export default function TemplateofAllChannels({ trigger }) {
             <Logo logosrc='logo/shenjatv.png'></Logo>
             <Logo logosrc='logo/aav.png'></Logo>
             <Logo logosrc='logo/firstchannel.png'></Logo>
-            <Logo logosrc='logo/dibratv.png'></Logo>
-            <Logo logosrc='logo/zicotv.png'></Logo>
-            <Logo logosrc='logo/shenjatv.png'></Logo>
           </Channels>
         </DialogContent>
         <DialogActions>
