@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { fadeInUp as fadeInFromLib } from "react-animations";
-import { keyframes } from "styled-components";
+
 import Image from "next/image";
 
 function Multitheme() {
-  const [theme, setTheme] = useState("livesport");
-  const [active, setActive] = useState(false);
-
   const acitivisation = (value) => {
     setActive(true);
     setTheme(value);

@@ -535,7 +535,7 @@ const Video = styled.div`
     width: 100%;
     height: auto;
 
-    opacity: 0.3;
+    opacity: 0.48;
     @media screen and (max-width: 1000px) {
       height: 100%;
       width: auto;

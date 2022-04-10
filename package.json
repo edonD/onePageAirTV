@@ -23,6 +23,7 @@
     "cloudinary-react": "^1.7.1",
     "lodash": "^4.17.21",
     "next": "12.0.10",
+    "next-optimized-images": "^2.6.2",
     "next-redux-wrapper": "^7.0.5",
     "react": "^17.0.2",
     "react-animations": "^1.0.0",
@@ -50,7 +51,8 @@
     "sharp": "^0.30.2",
     "styled-components": "^5.3.3",
     "styled-icons": "^10.45.0",
-    "text-mask-addons": "^3.8.0"
+    "text-mask-addons": "^3.8.0",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.2",
