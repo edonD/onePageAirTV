@@ -334,6 +334,7 @@ const Ofertat = styled.div`
 `;
 
 const PackageOfertaContainer = styled.div`
+  user-select: none;
   width: 20%;
   height: 100%;
   display: flex;
@@ -348,9 +349,9 @@ const PackageOfertaContainer = styled.div`
 
     font-size: 40px;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
     width: 20%;
-    height: 10%;
+    height: 5%;
   }
 `;
 const PackageContainer = styled.div`
@@ -580,12 +581,12 @@ const Video = styled.div`
     height: auto;
 
     opacity: 0.48;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
       height: 100%;
       width: auto;
     }
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 800px) {
     height: 100%;
     width: auto;
   }

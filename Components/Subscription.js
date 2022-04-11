@@ -77,8 +77,8 @@ const StyledButtonHome = styled(Button)`
     background-color: #2973d5;
     width: 20%;
     height: 56px;
-    margin-left: -10px;
-    border-radius: 0px;
+    margin-left: 10px;
+
     color: white;
     &:hover {
       background-color: #358eff;

@@ -55,7 +55,7 @@ export default function TemplateofAllDevices({ trigger }) {
             ></LogoDevice>
             <LogoDevice logosrc='logodevice/IOS.png' name='IOS'></LogoDevice>
             <LogoDevice
-              logosrc='logodevice/ChromecastTV.png'
+              logosrc='logodevice/ChromecastTV.jpg'
               name='Google Chromecast'
             ></LogoDevice>
             <LogoDevice

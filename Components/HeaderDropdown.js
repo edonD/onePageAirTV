@@ -130,7 +130,7 @@ const StyledButtonPorosit = styled(Button)`
     margin-bottom: 5px;
     margin: 15px;
     margin-left: 50px;
-
+    display: none;
     color: white;
     &:hover {
       background-color: #3c4149;
@@ -147,7 +147,7 @@ const StyledButtonSignIn = styled(Button)`
     height: 40px;
     margin-top: 40px;
     margin-left: 50px;
-
+    display: none;
     color: #040505;
     &:hover {
       background-color: #dcdcdc;
