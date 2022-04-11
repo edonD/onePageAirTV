@@ -47,12 +47,12 @@ function Home(props) {
       <Container>
         <BannerHome id='Banner'>
           <Intro>
-            <a>Platforma më cilësore shqiptare në botë është rrugës!</a>
+            <a>Platforma më cilësore shqiptare në botë po vjen!</a>
 
             <p>
-              Kudo në botë. 250+ kanale shqiptare, me përmbajtje të lajmeve,
-              sportit, historise dhe shumë të tjera. Mbi 1000 kanale të huaja.
-              Deri në 5 pajisje njëkohësisht.
+              Punon kudo në botë. 250+ kanale shqiptare, me përmbajtje të
+              lajmeve, sportit, historise dhe shumë të tjera. Mbi 1000 kanale të
+              huaja. Deri në 5 pajisje njëkohësisht.
             </p>
           </Intro>
           <Video>
@@ -197,11 +197,15 @@ const BannerHome = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  @media screen and (max-height: 600px) {
+    justify-content: flex-end;
+  }
   @media screen and (min-width: 800px) and (max-width: 1350px) {
     height: 75vh;
     padding-bottom: 100px;
@@ -484,7 +488,10 @@ const Intro = styled.div`
   position: relative;
   background: transparent;
   z-index: 1;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   user-select: none;
   a {
     font-weight: bold;
@@ -493,9 +500,23 @@ const Intro = styled.div`
     font-size: 55px;
     line-height: 1.5;
     letter-spacing: 1.5px;
+    @media screen and (max-width: 1400px) {
+      font-size: 30px;
+      line-height: 1.5;
+      width: 100%;
+      background: transparent;
+      letter-spacing: 0.5px;
+    }
 
     @media screen and (max-width: 1250px), screen and (max-height: 800px) {
       font-size: 30px;
+      line-height: 1.5;
+      width: 100%;
+      background: transparent;
+      letter-spacing: 0.5px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
       line-height: 1.5;
       width: 100%;
       background: transparent;
@@ -505,15 +526,22 @@ const Intro = styled.div`
   p {
     width: 60%;
     background: transparent;
-    margin: auto;
+    margin: 0px;
     color: hsla(0, 0%, 95.3%, 1);
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 1.5px;
+    @media screen and (max-width: 1450px), screen and (max-height: 800px) {
+      font-size: 15px;
+      line-height: 1.5;
+      width: 100%;
+      background: transparent;
+      letter-spacing: 0.5px;
+    }
     @media screen and (max-width: 1000px), screen and (max-height: 600px) {
       font-size: 10px;
       line-height: 1.5;
-
+      margin: 0px;
       width: 100%;
       background: transparent;
       letter-spacing: 0.5px;

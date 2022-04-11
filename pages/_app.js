@@ -14,11 +14,5 @@ export default function App({ Component, pageProps }) {
     persistor.persist();
   });
 
-  return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <Component {...pageProps} />
-      </PersistGate>
-    </Provider>
-  );
+  return <Component {...pageProps} />;
 }

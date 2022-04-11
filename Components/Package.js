@@ -43,7 +43,9 @@ function Package({
       </Introduction>
       <ButtonDiv>
         <Link href='/Payment'>
-          <StyledButton isBlack={isBlackstate}>ABONOHU</StyledButton>
+          <StyledButton disabled isBlack={isBlackstate}>
+            ABONOHU
+          </StyledButton>
         </Link>
       </ButtonDiv>
       <Wrap>

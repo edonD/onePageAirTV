@@ -17,7 +17,7 @@ function AboutUs() {
       <ImageContainer>
         <ImgDiv>
           <Image
-            src='/images/Skenderbeu.png'
+            src='/images/Skenderbeu.jpg'
             width={400}
             height={600}
             objectFit='cover'

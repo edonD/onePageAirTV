@@ -92,7 +92,9 @@ export default function TemplateofAllDevices({ trigger }) {
         </DialogContent>
         <DialogActions>
           <StyledButtonHome onClick={handleClose}>Cancel</StyledButtonHome>
-          <StyledButtonHome href='/Payment'>Porosit</StyledButtonHome>
+          <StyledButtonHome disabled href='/Payment'>
+            Porosit
+          </StyledButtonHome>
         </DialogActions>
       </Dialog>
     </Container>
