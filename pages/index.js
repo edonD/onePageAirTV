@@ -1,25 +1,10 @@
-import Auth from "@aws-amplify/auth";
 import React from "react";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+
 import styled from "styled-components";
 
 import { Stream } from "@styled-icons/material/Stream";
 
 function Splash() {
-  const router = useRouter();
-  useEffect(() => {
-    Auth.currentAuthenticatedUser({
-      bypassCache: false,
-    })
-      .then((user) => {
-        router.push("/LiveTV", undefined, { shallow: true });
-      })
-      .catch((err) => {
-        router.push("/Home", undefined, { shallow: true });
-      });
-  }, []);
-
   return (
     <Container>
       <StreamStyled />

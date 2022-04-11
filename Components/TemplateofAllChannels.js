@@ -6,7 +6,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import styled from "styled-components";
 import Logo from "./Logo";
-import Link from "next/link";
 
 export default function TemplateofAllChannels({ trigger }) {
   const [open, setOpen] = React.useState(false);
@@ -96,7 +95,9 @@ export default function TemplateofAllChannels({ trigger }) {
         </DialogContent>
         <DialogActions>
           <StyledButtonHome onClick={handleClose}>Cancel</StyledButtonHome>
-          <StyledButtonHome href='/Payment'>Porosit</StyledButtonHome>
+          <StyledButtonHome disabled href='/Payment'>
+            Porosit
+          </StyledButtonHome>
         </DialogActions>
       </Dialog>
     </div>
