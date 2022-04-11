@@ -64,8 +64,7 @@ function Package({
 }
 
 const pStyle = {
-  fontSize: "50px",
-  margin: 1,
+  fontSize: "45px",
   color: "#2f1c6a",
   fontWeight: "700",
 };
@@ -94,10 +93,9 @@ const RecommendedHeader = styled.div`
 const Container = styled.div`
   min-width: 200px;
   text-align: center;
-  width: ${(p) =>
-    p.size === "medium" ? "360px" : p.size === "small" ? "360px" : "360px"};
-  height: ${(p) =>
-    p.size === "medium" ? "810px" : p.size === "small" ? "810px" : "810px"};
+  width: 250px;
+  width: calc(100vw / 6);
+  height: 810px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -111,11 +109,15 @@ const Container = styled.div`
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   }
   overflow: hidden;
-  margin: 20px;
+  margin: 20px 10px 20px 10px;
 
   box-shadow: 0 0 16px rgb(0, 0, 0, 10%);
+  @media screen and (max-width: 1000px) {
+    width: 250px;
+    margin: 20px;
+  }
+
   @media screen and (max-width: 600px) {
-    width: 95%;
     max-width: 400px;
   }
 `;
@@ -164,6 +166,10 @@ const PriceContainerWrapper = styled.div`
   width: fit-content;
   display: flex;
   flex-direction: row;
+
+  span {
+    margin: 0px;
+  }
 `;
 const HeaderContainer = styled.div`
   height: 30%;

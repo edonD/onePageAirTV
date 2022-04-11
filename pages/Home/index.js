@@ -97,7 +97,9 @@ function Home(props) {
           <Multitheme />
         </AddOns>
         <Ofertat id='Ofertat'>
-          <p>Ofertat tona! </p>
+          <PackageOfertaContainer>
+            <p>Ofertat tona! </p>
+          </PackageOfertaContainer>
           <PackageContainer>
             <Package
               offer='MOBILE'
@@ -129,7 +131,7 @@ function Home(props) {
               VOD='100'
             ></Package>
             <Package
-              offer='FAMILY PREMIUM'
+              offer='PREMIUM'
               oldPrice='20.99'
               price='14.99'
               nrikanaleve='250'
@@ -322,24 +324,37 @@ const Ofertat = styled.div`
   background: #f4f4f4;
   position: relative;
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 2890px;
   }
+`;
+
+const PackageOfertaContainer = styled.div`
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   p {
     position: relative;
     top: 0;
     color: black;
     font-weight: bold;
 
-    font-size: 60px;
+    font-size: 40px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 20%;
+    height: 10%;
   }
 `;
 const PackageContainer = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -348,7 +363,7 @@ const PackageContainer = styled.div`
   overflow: hidden;
   background: transparent;
   position: relative;
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,6 +375,7 @@ const AddOns = styled.div`
   width: 80%;
   display: flex;
   margin: 40px;
+  border: 1px solid yellow;
   justify-content: center;
   align-items: center;
   overflow: hidden;
