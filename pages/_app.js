@@ -14,5 +14,9 @@ export default function App({ Component, pageProps }) {
     persistor.persist();
   });
 
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  );
 }

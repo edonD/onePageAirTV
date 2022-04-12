@@ -6,7 +6,28 @@ import { APIS } from "../../CONSTANTS/APIS";
 import DATA from "../../CONSTANTS/DATA";
 
 export const FETCH_CACHE_DURATION = 60 * 1000;
+/************* Test action **************/
 
+export const test = (
+  body = {},
+  onSuccess = () => {
+    console.log("test success");
+  },
+  onError = () => {
+    console.log("tes error");
+  }
+) =>
+  createFetchAction(
+    "/test",
+    "test",
+    "POST",
+    body,
+    {},
+    onSuccess,
+    null,
+    onError,
+    true
+  );
 // The action creator functions.
 const apiBegin = (identifier, data) => {
   const type = snakeCase(identifier).toUpperCase();

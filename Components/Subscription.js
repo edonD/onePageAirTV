@@ -1,28 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import Button from "@material-ui/core/Button";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { TextField } from "@material-ui/core";
-function Subscription() {
+import OutlinedInput from "@mui/material/OutlinedInput";
+import { test } from "../app/store/actions/api";
+import { connect } from "react-redux";
+
+const mapStatetoProps = (state) => ({});
+
+const mapDispatchtoProps = (dispatch) => {
+  return {
+    test: (body = {}) => dispatch(test(body)),
+  };
+};
+
+function Subscription(props) {
+  const SubmitConfirm = (event) => {
+    event.preventDefault();
+    setLoading(true);
+    StartTimer();
+    props.test({ info: `email:${email}` });
+  };
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const StartTimer = () => {
+    setTimeout(() => {
+      setLoading(false);
+      setEmail("");
+    }, 1000);
+  };
+
   return (
     <Container>
-      <Wrapper>
+      <Wrapper onSubmit={SubmitConfirm}>
         <StyledTextField
           variant='outlined'
-          autoComplete='new-password'
-          color='primary'
-          required={true}
-          onChange={(event) => {
-            // setConfirmationCode(event.target.value);
-          }}
-          inputProps={{}}
-          defaultValue=''
-          helperText=''
+          required
           type='email'
-          name='Regjistrohu me email'
+          InputProps={{}}
+          value={email}
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
           placeholder='Regjistrohu me email'
           id='Regjistrohu me email'
         />
-        <StyledButtonHome onClick={() => {}}>Regjistrohu</StyledButtonHome>
+
+        <StyledButtonHome loadingPosition='end' loading={loading} type='submit'>
+          Submit
+        </StyledButtonHome>
       </Wrapper>
       <Intro>
         <p>
@@ -33,7 +59,7 @@ function Subscription() {
   );
 }
 
-const Container = styled.form`
+const Container = styled.div`
   width: 80%;
   height: 120px;
   display: flex;
@@ -47,7 +73,7 @@ const Container = styled.form`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.form`
   width: 60%;
   height: 120px;
   display: flex;
@@ -72,13 +98,13 @@ const StyledTextField = styled(TextField)`
   }
 `;
 
-const StyledButtonHome = styled(Button)`
+const StyledButtonHome = styled(LoadingButton)`
   && {
     background-color: #2973d5;
     width: 20%;
     height: 56px;
     margin-left: 10px;
-
+    font-weight: 600;
     color: white;
     &:hover {
       background-color: #358eff;
@@ -148,4 +174,5 @@ const Intro = styled.div`
     }
   }
 `;
-export default Subscription;
+
+export default connect(mapStatetoProps, mapDispatchtoProps)(Subscription);
