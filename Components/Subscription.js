@@ -106,11 +106,16 @@ const StyledButtonHome = styled(LoadingButton)`
     margin-left: 10px;
     font-weight: 600;
     color: white;
+    &.Mui-disabled {
+      color: black;
+      background-color: #acd1ff;
+    }
     &:hover {
       background-color: #358eff;
     }
     @media screen and (max-width: 1400px) {
       font-size: 12px;
+      justify-content: flex-start;
     }
     @media screen and (max-width: 1000px) {
       font-size: 8px;
