@@ -10,7 +10,7 @@ const mapStatetoProps = (state) => ({});
 
 const mapDispatchtoProps = (dispatch) => {
   return {
-    test: (body = {}) => dispatch(test(body)),
+    test: (onSuccess = () => {}, body = {}) => dispatch(test(body, onSuccess)),
   };
 };
 
@@ -18,17 +18,17 @@ function Subscription(props) {
   const SubmitConfirm = (event) => {
     event.preventDefault();
     setLoading(true);
-    StartTimer();
-    props.test({ info: `email:${email}` });
+
+    props.test(
+      () => {
+        setEmail("");
+        setLoading(false);
+      },
+      { info: `email:${email}` }
+    );
   };
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const StartTimer = () => {
-    setTimeout(() => {
-      setLoading(false);
-      setEmail("");
-    }, 1000);
-  };
 
   return (
     <Container>
