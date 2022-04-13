@@ -15,7 +15,7 @@ function Splash() {
 
   return (
     <Container>
-      <motion.div
+      <ImageContainer
         animate={{
           scale: [
             1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1,
@@ -27,10 +27,8 @@ function Splash() {
         }}
         transition={{ duration: 1.5, delay: 1.5 }}
       >
-        <ImageContainer>
-          <Image src='/images/splash.png' layout='fill' objectFit='contain' />
-        </ImageContainer>
-      </motion.div>
+        <Image src='/images/splash.png' layout='fill' objectFit='contain' />
+      </ImageContainer>
     </Container>
   );
 }
@@ -49,10 +47,16 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 1px solid green;
+  @media screen and (max-width: 500px) {
+    height: 100vh;
+  }
 `;
 
-const ImageContainer = styled.div`
+const ImageContainer = styled(motion.div)`
   height: 120px;
   width: 300px;
   display: flex;
@@ -62,7 +66,8 @@ const ImageContainer = styled.div`
   color: white;
   position: relative;
   @media screen and (max-width: 500px) {
-    width: auto;
+    width: 80%;
+    border: 1px solid yellow;
   }
 `;
 
