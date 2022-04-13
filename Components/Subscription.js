@@ -47,7 +47,7 @@ function Subscription(props) {
         />
 
         <StyledButtonHome loadingPosition='end' loading={loading} type='submit'>
-          Submit
+          Regjistrohu
         </StyledButtonHome>
       </Wrapper>
       <Intro>
