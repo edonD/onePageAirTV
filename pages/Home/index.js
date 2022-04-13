@@ -376,7 +376,7 @@ const AddOns = styled.div`
   width: 80%;
   display: flex;
   margin: 40px;
-  border: 1px solid yellow;
+
   justify-content: center;
   align-items: center;
   overflow: hidden;
