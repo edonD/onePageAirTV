@@ -21,6 +21,7 @@
     "aws-amplify": "^4.3.14",
     "axios": "^0.25.0",
     "cloudinary-react": "^1.7.1",
+    "framer-motion": "^6.2.10",
     "lodash": "^4.17.21",
     "next": "12.0.10",
     "next-optimized-images": "^2.6.2",

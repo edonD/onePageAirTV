@@ -3,8 +3,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 import { Stream } from "@styled-icons/material/Stream";
+import Image from "next/image";
 
 function Splash() {
   const router = useRouter();
@@ -14,7 +15,22 @@ function Splash() {
 
   return (
     <Container>
-      <StreamStyled />
+      <motion.div
+        animate={{
+          scale: [
+            1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1, 1.1, 1,
+            1.1,
+          ],
+          transition: {
+            duration: 10.5,
+          },
+        }}
+        transition={{ duration: 1.5, delay: 1.5 }}
+      >
+        <ImageContainer>
+          <Image src='/images/splash.png' layout='fill' objectFit='cover' />
+        </ImageContainer>
+      </motion.div>
     </Container>
   );
 }
@@ -35,9 +51,15 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const StreamStyled = styled(Stream)`
-  height: 60%;
+const ImageContainer = styled.div`
+  height: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: white;
+  position: relative;
 `;
 
 export default Splash;
