@@ -50,7 +50,7 @@ const Container = styled.div`
   position: absolute;
   left: 0px;
   top: 0px;
-  border: 1px solid green;
+
   @media screen and (max-width: 500px) {
     height: 100vh;
   }
@@ -67,7 +67,6 @@ const ImageContainer = styled(motion.div)`
   position: relative;
   @media screen and (max-width: 500px) {
     width: 80%;
-    border: 1px solid yellow;
   }
 `;
 
