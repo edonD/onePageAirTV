@@ -10,7 +10,7 @@ import Image from "next/image";
 function Splash() {
   const router = useRouter();
   useEffect(() => {
-    router.push("/Home", undefined, { shallow: true });
+    // router.push("/Home", undefined, { shallow: true });
   }, []);
 
   return (
@@ -22,13 +22,13 @@ function Splash() {
             1.1,
           ],
           transition: {
-            duration: 10.5,
+            duration: 8.5,
           },
         }}
         transition={{ duration: 1.5, delay: 1.5 }}
       >
         <ImageContainer>
-          <Image src='/images/splash.png' layout='fill' objectFit='cover' />
+          <Image src='/images/splash.png' layout='fill' objectFit='contain' />
         </ImageContainer>
       </motion.div>
     </Container>
@@ -49,17 +49,21 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 const ImageContainer = styled.div`
-  height: 200px;
-  width: 500px;
+  height: 120px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   color: white;
   position: relative;
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 export default Splash;
