@@ -87,6 +87,7 @@ const Wrapper = styled.form`
 
   @media screen and (max-width: 800px) {
     margin: 0px;
+    width: 100%;
   }
 `;
 const StyledTextField = styled(TextField)`
@@ -115,10 +116,13 @@ const StyledButtonHome = styled(LoadingButton)`
     }
     @media screen and (max-width: 1400px) {
       font-size: 12px;
-      justify-content: flex-start;
+
+      width: 30%;
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
       font-size: 8px;
+      justify-content: flex-start;
+      width: 40%;
     }
   }
 `;
