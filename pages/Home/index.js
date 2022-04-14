@@ -26,7 +26,6 @@ import Image from "next/image";
 import Auth from "@aws-amplify/auth";
 
 import _ from "lodash";
-import Subheader from "../../Components/Subheader/Subheader";
 
 function Home(props) {
   useEffect(() => {

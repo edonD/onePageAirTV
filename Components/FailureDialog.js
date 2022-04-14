@@ -2,8 +2,9 @@ import * as React from "react";
 
 import Dialog from "@mui/material/Dialog";
 import styled from "styled-components";
-import { BiErrorCircle } from "react-icons/bi";
-export default function AlertDialog({ handleOpen, handleParent }) {
+import Image from "next/image";
+import { motion } from "framer-motion";
+export default function AlertDialog({ handleOpen, setfromchildPopup }) {
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -11,7 +12,7 @@ export default function AlertDialog({ handleOpen, handleParent }) {
       handleClickOpen(handleOpen);
       setTimeout(() => {
         handleClose();
-      }, 1000);
+      }, 2200);
     };
     if (handleOpen) {
       handleClick();
@@ -23,7 +24,7 @@ export default function AlertDialog({ handleOpen, handleParent }) {
   };
 
   const handleClose = () => {
-    handleParent(false);
+    setfromchildPopup(false);
     setOpen(false);
   };
 
@@ -31,8 +32,11 @@ export default function AlertDialog({ handleOpen, handleParent }) {
     <div>
       <Dialog open={open} fullScreen>
         <Content>
-          <h1 style={{ marginBottom: "0px", color: "#e8625d" }}>Failure</h1>
-          <BiErrorCircle size='256px' style={{ color: "#e8625d" }} />
+          <h1 style={{ marginBottom: "10px", color: "#6fba63" }}>
+            Regjistrimi me sukses!
+          </h1>
+          <p> Do të ju njoftojmë për datën e lançimit</p>
+          <Image width={50} height={50} src={"/images/email-svgrepo-com.svg"} />
         </Content>
       </Dialog>
     </div>
@@ -42,10 +46,20 @@ export default function AlertDialog({ handleOpen, handleParent }) {
 const Content = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #fceded;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   user-select: none;
+  h1 {
+    @media screen and (max-width: 350px) {
+      font-size: 20px;
+    }
+  }
+  p {
+    @media screen and (max-width: 300px) {
+      font-size: 10px;
+    }
+  }
 `;

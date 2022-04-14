@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { TextField } from "@material-ui/core";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import FailureDialog from "./FailureDialog";
 import { test } from "../app/store/actions/api";
 import { connect } from "react-redux";
 
@@ -23,15 +23,18 @@ function Subscription(props) {
       () => {
         setEmail("");
         setLoading(false);
+        setPopup(true);
       },
       { info: `email:${email}` }
     );
   };
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const [popup, setPopup] = useState(false);
 
   return (
     <Container>
+      <FailureDialog handleOpen={popup} setfromchildPopup={setPopup} />
       <Wrapper onSubmit={SubmitConfirm}>
         <StyledTextField
           variant='outlined'
@@ -71,6 +74,18 @@ const Container = styled.div`
   @media screen and (max-width: 1400px) {
     margin: 0px;
   }
+`;
+
+const PopupContainer = styled.div`
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 `;
 
 const Wrapper = styled.form`
