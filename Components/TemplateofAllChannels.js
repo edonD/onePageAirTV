@@ -57,11 +57,11 @@ export default function TemplateofAllChannels({ trigger }) {
             <Logo logosrc='logo/rtv21.png'></Logo>
             <Logo logosrc='logo/t7.png'></Logo>
             <Logo logosrc='logo/atv.jpg' differentiator='atv'></Logo>
-            <Logo logosrc='logo/topchannel.png'></Logo>
+            {/* <Logo logosrc='logo/topchannel.png'></Logo> */}
             <Logo logosrc='logo/abc.png'></Logo>
             <Logo logosrc='logo/klanplus.png'></Logo>
-            <Logo logosrc='logo/news24.png'></Logo>
-            <Logo logosrc='logo/oranews.png'></Logo>
+            {/* <Logo logosrc='logo/news24.png'></Logo>
+            <Logo logosrc='logo/oranews.png'></Logo> */}
             <Logo logosrc='logo/alsatm.png'></Logo>
             <Logo logosrc='logo/rtsh.png'></Logo>
             <Logo logosrc='logo/kanal7.png'></Logo>
