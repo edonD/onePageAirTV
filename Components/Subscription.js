@@ -186,10 +186,10 @@ const Intro = styled.div`
   span {
     border-radius: 4px;
     background: red;
-    color: black;
+    color: white;
     letter-spacing: 0.5px;
-    padding: 5px;
-    font-size: 28px;
+    padding: 10px;
+    font-size: 24px;
     @media screen and (max-width: 600px) {
       font-size: 10px;
     }
