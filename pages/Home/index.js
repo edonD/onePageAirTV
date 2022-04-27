@@ -47,7 +47,7 @@ function Home(props) {
       <Container>
         <BannerHome id='Banner'>
           <Intro>
-            <a>Platforma më cilësore shqiptare në botë po vjen!</a>
+            <span>Platforma më cilësore shqiptare në botë po vjen!</span>
 
             <p>
               Funksionon kudo në botë. 250+ kanale shqiptare, ku përfshihen
@@ -513,7 +513,7 @@ const Intro = styled.div`
   justify-content: center;
   align-items: center;
   user-select: none;
-  a {
+  span {
     font-weight: bold;
     background: transparent;
     color: hsla(0, 0%, 95.3%, 1);
