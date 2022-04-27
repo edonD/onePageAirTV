@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function Logo({ logosrc, differentiator }) {
+function Logo({ logosrc, differentiator, alt }) {
   return (
     <Container differentiator={differentiator}>
-      <img src={logosrc} />
+      <img src={logosrc} alt={alt} />
     </Container>
   );
 }

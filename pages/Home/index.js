@@ -70,25 +70,25 @@ function Home(props) {
         </BannerHome>
         <Kanalet id='Kanalet'>
           <Channels>
-            <Logo logosrc='logo/dukagjini.png'></Logo>
-            <Logo logosrc='logo/kanal10.png'></Logo>
-            <Logo logosrc='logo/klan.png'></Logo>
-            <Logo logosrc='logo/klanK.png'></Logo>
-            <Logo logosrc='logo/Ktv.png'></Logo>
-            <Logo logosrc='logo/rtk.jpg'></Logo>
-            <Logo logosrc='logo/rtv21.png'></Logo>
-            <Logo logosrc='logo/t7.png'></Logo>
-            <Logo logosrc='logo/atv.jpg' differentiator='atv'></Logo>
-            <Logo logosrc='logo/rtsh.png'></Logo>
-            <Logo logosrc='logo/kanal7.png'></Logo>
+            <Logo logosrc='logo/dukagjini.png' alt='dukagjini'></Logo>
+            <Logo logosrc='logo/kanal10.png' alt='kanal10'></Logo>
+            <Logo logosrc='logo/klan.png' alt='klan'></Logo>
+            <Logo logosrc='logo/klanK.png' alt='klanK'></Logo>
+            <Logo logosrc='logo/Ktv.png' alt='Ktv'></Logo>
+            <Logo logosrc='logo/rtk.jpg' alt='rtk'></Logo>
+            <Logo logosrc='logo/rtv21.png' alt='rtv21'></Logo>
+            <Logo logosrc='logo/t7.png' alt='t7'></Logo>
+            <Logo logosrc='logo/atv.jpg' alt='atv' differentiator='atv'></Logo>
+            <Logo logosrc='logo/rtsh.png' alt='rtsh'></Logo>
+            <Logo logosrc='logo/kanal7.png' alt='kanal7'></Logo>
             {/* <Logo logosrc='logo/topchannel.png'></Logo> */}
-            <Logo logosrc='logo/abc.png'></Logo>
-            <Logo logosrc='logo/klanplus.png'></Logo>
+            <Logo logosrc='logo/abc.png' alt='abc'></Logo>
+            <Logo logosrc='logo/klanplus.png' alt='klanplus'></Logo>
             {/* <Logo logosrc='logo/news24.png'></Logo> */}
             {/* <Logo logosrc='logo/oranews.png'></Logo> */}
-            <Logo logosrc='logo/alsatm.png'></Logo>
-            <Logo logosrc='logo/rtshsport.svg'></Logo>
-            <Logo logosrc='logo/vizionplus.png'></Logo>
+            <Logo logosrc='logo/alsatm.png' alt='alsatm'></Logo>
+            <Logo logosrc='logo/rtshsport.svg' alt='rtshsport'></Logo>
+            <Logo logosrc='logo/vizionplus.png' alt='vizionplus'></Logo>
           </Channels>
           <TemplateofAllChannels trigger={allChannelsPopup} />
           <h1>Kudo në botë, qasje në të gjitha kanalet shqiptare </h1>
