@@ -83,7 +83,7 @@ function Home(props) {
             <Logo logosrc='logo/kanal7.png' alt='kanal7'></Logo>
             {/* <Logo logosrc='logo/topchannel.png'></Logo> */}
             <Logo logosrc='logo/abc.png' alt='abc'></Logo>
-            <Logo logosrc='logo/klanplus.png' alt='klanplus'></Logo>
+            <Logo logosrc='logo/klanplus.jpg' alt='klanplus'></Logo>
             {/* <Logo logosrc='logo/news24.png'></Logo> */}
             {/* <Logo logosrc='logo/oranews.png'></Logo> */}
             <Logo logosrc='logo/alsatm.png' alt='alsatm'></Logo>
