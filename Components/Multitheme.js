@@ -18,20 +18,32 @@ function Multitheme() {
             layout='fill'
             objectFit='cover'
             src='/images/sport/ronaldo.jpg'
+            alt='ronaldo'
           />
         </ImgConatiner>
         <ImgConatiner>
-          <Image layout='fill' objectFit='cover' src='/images/sport/in.jpg' />
+          <Image
+            layout='fill'
+            objectFit='cover'
+            src='/images/sport/in.jpg'
+            alt='lautaro'
+          />
         </ImgConatiner>
         <ImgConatiner>
           <Image
             layout='fill'
             objectFit='cover'
             src='/images/sport/xhaka.jpg'
+            alt='xhaka'
           />
         </ImgConatiner>
         <ImgConatiner>
-          <Image layout='fill' objectFit='cover' src='/images/sport/rm.jpg' />
+          <Image
+            layout='fill'
+            objectFit='cover'
+            src='/images/sport/rm.jpg'
+            alt='benzema'
+          />
         </ImgConatiner>
       </Square>
 
