@@ -19,6 +19,7 @@ import Multitheme from "../../Components/Multitheme";
 import TemplateofAllChannels from "../../Components/TemplateofAllChannels";
 import AboutUs from "../../Components/AboutUs";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 import TemplateofAllDevices from "../../Components/TemplateofAllDevices";
 // import ButtonFooter from "../../Components/VOD/Components/ButtonFooter";
 import Image from "next/image";

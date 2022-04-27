@@ -5,6 +5,8 @@ import aws_exports from "../src/aws-exports";
 import { PersistGate } from "redux-persist/integration/react";
 import "../styles/globals.css";
 import Amplify from "aws-amplify";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo-config";
 
 Amplify.configure(aws_exports);
 
@@ -15,8 +17,11 @@ export default function App({ Component, pageProps }) {
   });
 
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <>
+      <DefaultSeo {...SEO} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </>
   );
 }
