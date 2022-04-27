@@ -37,6 +37,7 @@ const Header = (props) => {
       <Logo></Logo>
       <NavMenu>
         <ScrollLink
+          aref='www.airt.live'
           to='Kanalet'
           smooth={true}
           duration={500}

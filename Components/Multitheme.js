@@ -86,6 +86,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/Bundesliga.svg'
                 layout='fill'
                 objectFit='contain'
+                alt='bundesliga'
               />
             </ImageWrapper>
             <ImageWrapper>
