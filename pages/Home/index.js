@@ -169,6 +169,7 @@ function Home(props) {
               layout='fill'
               objectFit='contain'
               src='/images/alldevices.png'
+              alt='pajisjet'
             ></Image>
           </FourthActImage>
         </Pajisjet>
