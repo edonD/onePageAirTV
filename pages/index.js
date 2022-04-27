@@ -10,7 +10,7 @@ import Image from "next/image";
 function Splash() {
   const router = useRouter();
   useEffect(() => {
-    router.push("/Home", undefined, { shallow: true });
+    router.push("/Home", undefined, { shallow: false });
   }, []);
 
   return (

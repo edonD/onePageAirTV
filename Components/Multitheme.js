@@ -62,6 +62,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/Serie_a_2021.png'
                 layout='fill'
                 objectFit='contain'
+                alt='serie A'
               />
             </ImageWrapper>
             <ImageWrapper>
@@ -69,6 +70,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/icons8-the-premier-league-48.png'
                 layout='fill'
                 objectFit='contain'
+                alt='premier league'
               />{" "}
             </ImageWrapper>
             <ImageWrapper>
@@ -76,6 +78,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/LaLiga_Santander.svg'
                 layout='fill'
                 objectFit='contain'
+                alt='la liga'
               />
             </ImageWrapper>
             <ImageWrapper>
@@ -90,6 +93,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/NBA.svg'
                 layout='fill'
                 objectFit='contain'
+                alt='nba'
               />
             </ImageWrapper>
             <ImageWrapper>
@@ -97,6 +101,7 @@ function Multitheme() {
                 src='/images/multitheme/sports/UFC.jpg'
                 layout='fill'
                 objectFit='contain'
+                alt='ufc'
               />
             </ImageWrapper>
           </SecondImageContainer>
