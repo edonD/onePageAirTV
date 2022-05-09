@@ -86,7 +86,7 @@ const Header = (props) => {
           offset={-80}
           spy={true}
         >
-          <BiDevices style={{ color: "white" }} />
+          <BiDevices style={{ color: "white", marginRight: "3px" }} />
 
           <span> PAJISJET</span>
         </ScrollLink>
