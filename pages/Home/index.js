@@ -50,9 +50,9 @@ function Home(props) {
             <span>Platforma më cilësore shqiptare në botë po vjen!</span>
 
             <p>
-              Funksionon kudo në botë. 250+ kanale shqiptare, ku përfshihen
-              lajmet, sporti, historia, filmat dhe shumë të tjera. Mbi 1000
-              kanale të huaja. Deri në 5 pajisje njëkohësisht.
+              Funksionon kudo në botë. Të gjitha kanalet shqiptare, ku
+              përfshihen lajmet, sporti, historia, filmat dhe shumë të tjera.
+              Shumë kanale të huaja. Deri në 5 pajisje njëkohësisht.
             </p>
           </Intro>
           <Video>
