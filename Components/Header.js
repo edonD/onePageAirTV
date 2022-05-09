@@ -88,7 +88,7 @@ const Header = (props) => {
         >
           <BiDevices style={{ color: "white" }} />
 
-          <span>PAJISJET</span>
+          <span> PAJISJET</span>
         </ScrollLink>
 
         <ScrollLink
