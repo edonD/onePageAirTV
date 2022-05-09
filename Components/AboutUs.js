@@ -66,18 +66,16 @@ const FadeBackground = styled.div`
 `;
 
 const Header = styled.h1`
-  margin-left: 20px;
-
   position: relative;
   font-size: 38px;
   line-height: 1.5;
   background: transparent;
   color: black;
-  width: 80%;
+  width: 90%;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 `;
 const Paragraph = styled.div`
