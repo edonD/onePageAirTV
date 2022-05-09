@@ -519,8 +519,9 @@ const Intro = styled.div`
     background: transparent;
     color: hsla(0, 0%, 95.3%, 1);
     font-size: 55px;
-    line-height: 1.5;
+    line-height: 1.15;
     letter-spacing: 1.5px;
+    margin-bottom: 10px;
     @media screen and (max-width: 1400px) {
       font-size: 30px;
       line-height: 1.5;
