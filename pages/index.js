@@ -36,14 +36,16 @@ function Splash() {
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     #121f3e,
     #1b2b4c,
     #24375b,
     #2c436a,
     #35507a
-  );
+  ); */
+  background-color: black;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
