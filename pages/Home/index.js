@@ -152,9 +152,9 @@ function Home(props) {
         </Ofertat>{" "}
         <Pajisjet id='Pajisjet'>
           <FourthActDescription>
-            <h1>AirTV në të gjitha pajisjet.</h1>
+            <h1>Air TV në të gjitha pajisjet.</h1>
             <p>
-              AirTV në të gjitha dhomat. Qoftë në dhomën e ndenjes, dhomën e
+              Air TV në të gjitha dhomat. Qoftë në dhomën e ndenjes, dhomën e
               gjumit, kuzhinën apo banjën, funksionon kudo! Argëtimi më i mirë
               për të gjithë familjen.
             </p>
