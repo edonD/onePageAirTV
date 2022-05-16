@@ -34,15 +34,16 @@ const Header = (props) => {
   };
   return (
     <Nav headerdown={hasScrolled}>
-      <Link href='/Home'>
-        <Logo>
+      <Logo>
+        <Link href='/Home'>
           <Image
             src={"/images/brandLogo/symbol4.png"}
             width='40px'
             height='40px'
           />
-        </Logo>
-      </Link>
+        </Link>
+      </Logo>
+
       <NavMenu>
         <ScrollLink
           href='www.airt.live'
@@ -208,7 +209,7 @@ const Nav = styled.nav`
   user-select: none;
   @media (max-width: 1200px) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 `;
