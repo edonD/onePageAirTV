@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import ReactCountryFlag from "react-country-flag";
+import Link from "next/link";
+import Image from "next/image";
 
 import {
   FaFacebook,
@@ -18,6 +20,16 @@ function Footer() {
           <SocialMediaWrap>
             <WebsiteRights>
               ©{new Date().getFullYear()} All rights reserved.
+              <Link href='/privacy-policy'>
+                <TextContainer>
+                  <span>Privacy Policy</span>
+                </TextContainer>
+              </Link>
+              <Link href='/terms-and-conditions'>
+                <TextContainer>
+                  <span>Terms and conditions</span>
+                </TextContainer>
+              </Link>
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
@@ -85,6 +97,13 @@ const SocialMedia = styled.section`
   width: 100%;
   height: 100%;
 `;
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+`;
 
 const SocialMediaWrap = styled.div`
   height: 100%;
@@ -102,6 +121,10 @@ const SocialMediaWrap = styled.div`
 const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SocialIcons = styled.div`

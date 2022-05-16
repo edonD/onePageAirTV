@@ -34,7 +34,7 @@ function Home(props) {
       bypassCache: false,
     })
       .then((user) => {
-        router.push("/LiveTV", undefined, { shallow: true });
+        router.push("/Home", undefined, { shallow: true });
       })
       .catch((err) => {
         router.push("/Home", undefined, { shallow: true });
@@ -597,74 +597,6 @@ const Video = styled.div`
   }
 `;
 
-const StyledButtonHome = styled(Button)`
-  && {
-    margin: 30px;
-    z-index: 2;
-    background-color: white;
-    font-size: 20px;
-    font-weight: 500;
-    width: 300px;
-    height: 50px;
-    color: black;
-    cursor: pointer;
-    &:hover {
-      background-color: #dcdcdc;
-    }
-    @media screen and (max-width: 1400px) {
-      margin: 10px;
-      margin-top: 40px;
-    }
-  }
-`;
-
-const AnimationDiv = styled.div`
-  width: 100%;
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 5;
-  border: 1px solid green;
-`;
-const DeviceAnimationContainer = styled.div`
-  position: relative;
-  border: 1px solid yellow;
-  float: right;
-  width: 500px;
-  height: 800px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  background-color: transparent;
-  background: transparent;
-  margin: 10px;
-`;
-const AnimationContainer = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  float: right;
-  width: 30%;
-  height: 100%;
-  border-radius: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  background-color: transparent;
-  background: transparent;
-  margin: 10px;
-  color: white;
-`;
 const Works = styled.div`
   margin: 20px;
   width: 80%;

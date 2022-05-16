@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 import { BiDevices } from "react-icons/bi";
 import { useRouter } from "next/router";
 import { FiAlignJustify } from "react-icons/fi";
-
+import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
 const Header = (props) => {
@@ -34,7 +34,15 @@ const Header = (props) => {
   };
   return (
     <Nav headerdown={hasScrolled}>
-      <Logo></Logo>
+      <Link href='/Home'>
+        <Logo>
+          <Image
+            src={"/images/brandLogo/symbol4.png"}
+            width='40px'
+            height='40px'
+          />
+        </Logo>
+      </Link>
       <NavMenu>
         <ScrollLink
           href='www.airt.live'
@@ -213,10 +221,10 @@ const Logo = styled.a`
   background: transparent;
   font-size: 0;
   display: inline-block;
+  cursor: pointer;
   img {
     display: block;
-    background: black;
-    width: 80%;
+    background: transparent;
   }
 `;
 
