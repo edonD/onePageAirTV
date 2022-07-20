@@ -68,7 +68,7 @@ function Home(props) {
           </Video>
           <Subscription />
         </BannerHome>
-        <Kanalet id='Kanalet'>
+        {/* <Kanalet id='Kanalet'>
           <Channels>
             <Logo logosrc='logo/dukagjini.png' alt='dukagjini'></Logo>
             <Logo logosrc='logo/kanal10.png' alt='kanal10'></Logo>
@@ -81,11 +81,11 @@ function Home(props) {
             <Logo logosrc='logo/atv.jpg' alt='atv' differentiator='atv'></Logo>
             <Logo logosrc='logo/rtsh.png' alt='rtsh'></Logo>
             <Logo logosrc='logo/kanal7.png' alt='kanal7'></Logo>
-            {/* <Logo logosrc='logo/topchannel.png'></Logo> */}
+            { <Logo logosrc='logo/topchannel.png'></Logo> }
             <Logo logosrc='logo/abc.png' alt='abc'></Logo>
             <Logo logosrc='logo/klanplus.png' alt='klanplus'></Logo>
-            {/* <Logo logosrc='logo/news24.png'></Logo> */}
-            {/* <Logo logosrc='logo/oranews.png'></Logo> */}
+            { <Logo logosrc='logo/news24.png'></Logo> }
+            { <Logo logosrc='logo/oranews.png'></Logo> }
             <Logo logosrc='logo/alsatm.png' alt='alsatm'></Logo>
             <Logo logosrc='logo/rtshsport.svg' alt='rtshsport'></Logo>
             <Logo logosrc='logo/vizionplus.png' alt='vizionplus'></Logo>
@@ -95,7 +95,7 @@ function Home(props) {
           <h2>
             Pa proces të instalimit. Thjesht abonohu the shijoje eksperiencën.
           </h2>
-        </Kanalet>
+        </Kanalet>*/}
         <AddOns id='AddOns'>
           <Multitheme />
         </AddOns>
