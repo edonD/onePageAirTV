@@ -62,7 +62,7 @@ function Home(props) {
               loop
               playsInline
               disablePictureInPicture
-              src='/videos/Video1-optimized.mp4'
+              src='/videos/temporary-video.mp4'
               type='video/mp4'
             />
           </Video>

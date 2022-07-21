@@ -56,7 +56,7 @@ function Multitheme() {
             Të gjitha ndeshjet sportive në smartphone, TV apo Website. Ndiq top
             ligat e futbollit, basktebollit, apo ndeshjet e boksit the te UFC.
           </h2>
-          <SecondImageContainer>
+          {/* <SecondImageContainer>
             <ImageWrapper>
               <Image
                 src='/images/multitheme/sports/Serie_a_2021.png'
@@ -105,7 +105,7 @@ function Multitheme() {
                 alt='ufc'
               />
             </ImageWrapper>
-          </SecondImageContainer>
+          </SecondImageContainer> */}
         </SecondHeaderDescription>
       </DescriptionContainer>
     </Container>
